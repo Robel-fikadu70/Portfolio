@@ -92,7 +92,7 @@ const Bookhive = () => {
           </div>
         </div>
         <img
-          src="src/assets/Screenshot 2025-05-27 005328.png"
+          src="/assets/Screenshot 2025-05-27 005328.png"
           alt=""
           className="lg:w-1/3  md:w-1/4  hidden md:block rounded-4xl w-full object-cover transition-all duration-600 ease-in-out blur-[4px] hover:blur-none hover:scale-105 hover:-rotate-[20deg]"
         />
@@ -133,7 +133,7 @@ const CurrencyPrediction = () => {
           </div>
         </div>
         <img
-          src="src/assets/whole_plot.png"
+          src="/assets/whole_plot.png"
           alt=""
           className="lg:w-1/3 md:w-1/4 hidden my-28 md:block rounded-4xl w-full object-cover transition-all duration-600 ease-in-out blur-[4px] hover:blur-none hover:scale-105 hover:-rotate-[20deg]"
         />
@@ -180,7 +180,7 @@ const BusRouting = () => {
           </div>
         </div>
         <img
-          src="src/assets/SmartTransit.jpeg"
+          src="/assets/SmartTransit.jpeg"
           alt=""
           className="lg:w-1/3 md:w-1/4 hidden md:block rounded-4xl w-full object-cover transition-all duration-600 ease-in-out blur-[4px] hover:blur-none hover:scale-105 hover:-rotate-[20deg]"
         />
@@ -227,7 +227,7 @@ const MobileApp = () => {
           </div>
         </div>
         <img
-          src="src/assets/Ecommerce.jpg"
+          src="/assets/Ecommerce.jpg"
           alt=""
           className="lg:w-1/3 md:w-1/4 hidden md:block rounded-4xl w-full object-cover transition-all duration-600 ease-in-out blur-[4px] hover:blur-none hover:scale-105 hover:-rotate-[20deg]"
         />

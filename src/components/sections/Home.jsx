@@ -12,7 +12,7 @@ export const Home = () => {
       
         <div className="relative space-y-10 items-center flex flex-col w-screen">
           <img
-            src="src/assets/proff.jpg"
+            src="/assets/proff.jpg"
             className=" w-40 h-40 object-cover border-4 border-gray-700 shadow-xl rounded-full bg-amber-50"
           />
           <span className=" absolute w-auto bottom-5 left-1/2 -translate-x-1/2 transform px-5 py-1   bg-gray-200 rounded-md shadow-md text-black text-center text-xl font-bold">
