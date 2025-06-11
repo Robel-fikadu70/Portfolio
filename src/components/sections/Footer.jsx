@@ -26,15 +26,15 @@ const HeroSection = () => {
               {[...Array(2)].map((_, i) => (
                 <div key={i}>
                   <img
-                    src="src/assets/nf1.jpg"
+                    src="/assets/nf1.jpg"
                     className="h-[200px] w-full object-cover"
                   />
                   <img
-                    src="src/assets/nf2.jpg"
+                    src="/assets/nf2.jpg"
                     className="h-[200px] w-full object-cover"
                   />
                   <img
-                    src="src/assets/nf3.jpg"
+                    src="/assets/nf3.jpg"
                     className="h-[200px] w-full object-cover"
                   />
                 </div>
@@ -48,15 +48,15 @@ const HeroSection = () => {
               {[...Array(2)].map((_, i) => (
                 <div key={i}>
                   <img
-                    src="src/assets/nf1.jpg"
+                    src="/assets/nf1.jpg"
                     className="src/assets/nf4.png"
                   />
                   <img
-                    src="src/assets/nf1.jpg"
+                    src="/assets/nf1.jpg"
                     className="h-[200px] w-full object-cover"
                   />
                   <img
-                    src="src/assets/nf2.jpg"
+                    src="/assets/nf2.jpg"
                     className="h-[200px] w-full object-cover"
                   />
                 </div>
@@ -70,15 +70,15 @@ const HeroSection = () => {
               {[...Array(2)].map((_, i) => (
                 <div key={i}>
                   <img
-                    src="src/assets/nf3.jpg"
+                    src="/assets/nf3.jpg"
                     className="h-[200px] w-full object-cover"
                   />
                   <img
-                    src="src/assets/nf4.jpg"
+                    src="/assets/nf4.jpg"
                     className="h-[200px] w-full object-cover"
                   />
                   <img
-                    src="src/assets/nf1.jpg"
+                    src="/assets/nf1.jpg"
                     className="h-[200px] w-full object-cover"
                   />
                 </div>
