@@ -1,0 +1,62 @@
+/* CardSlider.css */
+.slider-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  /* Optional: Add a gradient mask for fade effect at edges */
+  mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+}
+
+.slider-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+.slider-container:hover .slider-track {
+  animation-play-state: paused;
+}
+
+.slider-item {
+  flex: 0 0 auto;
+  width: 200px;
+  margin-right: 20px;
+  transition: filter 0.3s;
+}
+
+.slider-container:hover .slider-item {
+  filter: grayscale(100%);
+}
+
+.slider-container:hover .slider-item:hover {
+  filter: grayscale(0%);
+}
+
+.card {
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Example gradient */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  padding: 1rem;
+  color: white;
+  text-align: center;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
