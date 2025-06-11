@@ -1,7 +1,7 @@
 // src/components/Accreditations/Accreditations.jsx
 import React, { useState } from "react";
 import styled from "styled-components";
-import { accreditationsData } from "../AccreditationsData";
+import { accreditationsData } from "../accreditationsData";
 import SeeMoreBtn from "../SeeMoreBtn";
 
 const Accreditations = () => {
