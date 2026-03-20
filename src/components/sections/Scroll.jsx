@@ -2,15 +2,17 @@ import React, { useEffect, useRef, useState } from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
 
 const cards = [
-  { id: 1, title: "express-JS", img: "/assets/icons8-express-js-96.svg" },
-  { id: 2, title: "Git", img: "/assets/icons8-git-48.svg" },
-  { id: 3, title: "Javascript", img: "/assets/icons8-javascript-96.svg" },
-  { id: 4, title: "Mongodb", img: "/assets/icons8-mongodb-48.svg" },
+  { id: 1, title: "Git", img: "/assets/icons8-git-48.svg" },
+  { id: 2, title: "Javascript", img: "/assets/icons8-javascript-96.svg" },
+  { id: 3, title: "Tailwind-css", img: "/assets/icons8-tailwind-css-48.svg" },
+  { id: 4, title: "React", img: "/assets/icons8-react-native.svg" },
   { id: 5, title: "Nextjs", img: "/assets/icons8-nextjs-64.svg" },
-  { id: 6, title: "Nodejs", img: "/assets/icons8-nodejs-48.svg" },
+  { id: 6, title: "Mongodb", img: "/assets/icons8-mongodb-48.svg" },
   { id: 7, title: "Postgresql", img: "/assets/icons8-postgresql-48.svg" },
-  { id: 8, title: "Python", img: "/assets/icons8-python-96.svg" },
-  { id: 9, title: "Tailwind-css", img: "/assets/icons8-tailwind-css-48.svg" },
+  { id: 8, title: "Nodejs", img: "/assets/icons8-nodejs-48.svg" },
+  { id: 9, title: "express-JS", img: "/assets/icons8-express-js-96.svg" },
+  { id: 10, title: "NestJS", img: "/assets/icons8-nestjs.svg" },
+  { id: 11, title: "Python", img: "/assets/icons8-python-96.svg" },
 ];
 
 const CardSlider = () => {

@@ -18,45 +18,55 @@ export const Projects = () => {
 
   return (
     <RevealOnScroll>
-    <section
-      id="projects"
-      ref={containerRef}
-      className="relative min-h-fit bg-transparent text-white px-4 py-20 "
-    >
-      
-      
-      {/* Card 1 */}
-      <motion.div
-        style={{ scale: scale1, zIndex: 1 }}
-        className="sticky top-20"
+      <section
+        id="projects"
+        ref={containerRef}
+        className="relative min-h-fit bg-transparent text-white px-4 py-20 "
       >
-        <Bookhive />
-      </motion.div>
+        {/* Card 1 */}
+        <motion.div
+          style={{ scale: scale1, zIndex: 1 }}
+          className="sticky top-20"
+        >
+          <Bookhive />
+        </motion.div>
 
-      {/* Card 2 */}
-      <motion.div
-        style={{ scale: scale2, zIndex: 2 }}
-        className="sticky top-36"
-      >
-        <CurrencyPrediction />
-      </motion.div>
+        {/* Card 2 */}
+        <motion.div
+          style={{ scale: scale2, zIndex: 2 }}
+          className="sticky top-36"
+        >
+          <CurrencyPrediction />
+        </motion.div>
 
-      {/* Card 3 */}
-      <motion.div
-        style={{ scale: scale3, zIndex: 3 }}
-        className="sticky top-52"
-      >
-        <BusRouting />
-      </motion.div>
-      
-      <motion.div
-        style={{ scale: scale3, zIndex: 3 }}
-        className="sticky top-52"
-      >
-        <MobileApp />
-      </motion.div>
-            
-    </section>
+        {/* Card 3 */}
+        <motion.div
+          style={{ scale: scale3, zIndex: 3 }}
+          className="sticky top-52"
+        >
+          {/* <BusRouting /> */}
+          <RugNova />
+        </motion.div>
+
+        <motion.div
+          style={{ scale: scale3, zIndex: 4 }}
+          className="sticky top-68"
+        >
+          <BMS />
+        </motion.div>
+        <motion.div
+          style={{ scale: scale3, zIndex: 5 }}
+          className="sticky top-84"
+        >
+          <Kwest />
+        </motion.div>
+        <motion.div
+          style={{ scale: scale3, zIndex: 5 }}
+          className="sticky top-84"
+        >
+          <CollabFlow />
+        </motion.div>
+      </section>
     </RevealOnScroll>
   );
 };
@@ -206,7 +216,6 @@ const MobileApp = () => {
               is managed in real time using Firestore, ensuring fast and dynamic
               user experiences
               <br />
-              
             </p>
           </div>
 
@@ -228,6 +237,185 @@ const MobileApp = () => {
         </div>
         <img
           src="/assets/Ecommerce.jpg"
+          alt=""
+          className="lg:w-1/3 md:w-1/4 hidden md:block rounded-4xl w-full object-cover transition-all duration-600 ease-in-out blur-[4px] hover:blur-none hover:scale-105 hover:-rotate-[20deg]"
+        />
+      </div>
+    </div>
+  );
+};
+const BMS = () => {
+  return (
+    <div className="flex flex-col gap-y-5 border border-gray-400 lg:mx-24  mb-10 bg-[#111] rounded-4xl shadow-xl">
+      <div className="p-6 flex flex-col lg:flex-row items-start gap-10">
+        <div className="lg:w-2/3 space-y-6">
+          <h1 className="text-3xl font-bold mb-2">BMS</h1>
+          <div className="flex flex-col md:flex-row gap-4">
+            <p className="text-gray-400 max-w-lg mb-4 leading-relaxed">
+              Developed a Building Management System during my internship at TBC
+              Technologies, focusing on creating a responsive and user-friendly
+              frontend interface. Built using React with Vite, the application
+              leverages Redux for state management and shadcn/ui for clean,
+              modern UI components. Contributed to structuring the application,
+              implementing dynamic views, and ensuring a smooth user experience
+              across different sections of the system. The project was part of a
+              larger system and remained frontend-focused at the time the
+              internship concluded.
+              <br />
+            </p>
+          </div>
+
+          <div className="mt-15 mx-8  flex flex-wrap gap-2">
+            {/* {["ASP.NET", "Bootstrap", "JS", "HTML"].map((tech, key) => (
+              <span
+                key={key}
+                className="bg-blue-500/10 border text-blue-500 py-3 px-5 rounded-full text-l hover:bg-blue-500/40 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] hover:-translate-y-1 transition-transform duration-300"
+              >
+                {tech}
+              </span>
+            ))} */}
+            <Tooltip
+              techStack={"This project was made using React, Shadcn, Redux"}
+            />
+          </div>
+        </div>
+        <img
+          src="/assets/BMS.png"
+          alt=""
+          className="lg:w-1/3 md:w-1/4 hidden md:block rounded-4xl w-full object-cover transition-all duration-600 ease-in-out blur-[4px] hover:blur-none hover:scale-105 hover:-rotate-[20deg]"
+        />
+      </div>
+    </div>
+  );
+};
+const Kwest = () => {
+  return (
+    <div className="flex flex-col gap-y-5 border border-gray-400 lg:mx-24  mb-10 bg-[#111] rounded-4xl shadow-xl">
+      <div className="p-6 flex flex-col lg:flex-row items-start gap-10">
+        <div className="lg:w-2/3 space-y-6">
+          <h1 className="text-3xl font-bold mb-2">Kwest</h1>
+          <div className="flex flex-col md:flex-row gap-4">
+            <p className="text-gray-400 max-w-lg mb-4 leading-relaxed">
+              Developed a Leave Management Web Application during my internship
+              at Gebeya Inc, designed to streamline employee leave requests and
+              organizational approval workflows. Implemented features allowing
+              employees to submit leave requests, managers to review and approve
+              them, and administrators to oversee and manage the system.
+              Contributed to core functionality and system structure, with the
+              project remaining incomplete following the conclusion of the
+              internship.
+              <br />
+            </p>
+          </div>
+
+          <div className="mt-15 mx-8  flex flex-wrap gap-2">
+            {/* {["ASP.NET", "Bootstrap", "JS", "HTML"].map((tech, key) => (
+              <span
+                key={key}
+                className="bg-blue-500/10 border text-blue-500 py-3 px-5 rounded-full text-l hover:bg-blue-500/40 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] hover:-translate-y-1 transition-transform duration-300"
+              >
+                {tech}
+              </span>
+            ))} */}
+            <Tooltip
+              techStack={"This project was made using React, Keycloak, NestJs"}
+            />
+          </div>
+        </div>
+        <img
+          src="/assets/Kwest.png"
+          alt=""
+          className="lg:w-1/3 md:w-1/4 hidden md:block rounded-4xl w-full object-cover transition-all duration-600 ease-in-out blur-[4px] hover:blur-none hover:scale-105 hover:-rotate-[20deg]"
+        />
+      </div>
+    </div>
+  );
+};
+const RugNova = () => {
+  return (
+    <div className="flex flex-col gap-y-5 border border-gray-400 lg:mx-24  mb-10 bg-[#111] rounded-4xl shadow-xl">
+      <div className="p-6 flex flex-col lg:flex-row items-start gap-10">
+        <div className="lg:w-2/3 space-y-6">
+          <h1 className="text-3xl font-bold mb-2">Rug Nova</h1>
+          <div className="flex flex-col md:flex-row gap-4">
+            <p className="text-gray-400 max-w-lg mb-4 leading-relaxed">
+              Developed a full-stack E-commerce web application for a
+              rug-selling business using the MERN stack. Implemented complete
+              shopping functionality including product listing, detailed product
+              views, cart management, and secure checkout flow. Built an admin
+              panel to manage inventory, allowing the addition, updating, and
+              pricing of rugs. Integrated user authentication while also
+              supporting guest checkout, ensuring flexibility for customers.
+              Focused on delivering a seamless and responsive user experience
+              across the platform.
+              <br />
+            </p>
+          </div>
+
+          <div className="mt-15 mx-8  flex flex-wrap gap-2">
+            {/* {["ASP.NET", "Bootstrap", "JS", "HTML"].map((tech, key) => (
+              <span
+                key={key}
+                className="bg-blue-500/10 border text-blue-500 py-3 px-5 rounded-full text-l hover:bg-blue-500/40 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] hover:-translate-y-1 transition-transform duration-300"
+              >
+                {tech}
+              </span>
+            ))} */}
+            <Tooltip
+              techStack={
+                "This project was made using MongoDB, Express.js, React, Node.js"
+              }
+            />
+          </div>
+        </div>
+        <img
+          src="/assets/RugNova.png"
+          alt=""
+          className="lg:w-1/3 md:w-1/4 hidden md:block rounded-4xl w-full object-cover transition-all duration-600 ease-in-out blur-[4px] hover:blur-none hover:scale-105 hover:-rotate-[20deg]"
+        />
+      </div>
+    </div>
+  );
+};
+const CollabFlow = () => {
+  return (
+    <div className="flex flex-col gap-y-5 border border-gray-400 lg:mx-24  mb-10 bg-[#111] rounded-4xl shadow-xl">
+      <div className="p-6 flex flex-col lg:flex-row items-start gap-10">
+        <div className="lg:w-2/3 space-y-6">
+          <h1 className="text-3xl font-bold mb-2">Collab Flow</h1>
+          <div className="flex flex-col md:flex-row gap-4">
+            <p className="text-gray-400 max-w-lg mb-4 leading-relaxed">
+              Developed Collab Flow, a collaboration
+              platform enhanced with real-time communication and AI-powered
+              productivity tools. Built using Firebase Firestore for scalable
+              data management, the application includes a built-in chat system,
+              presence tracking similar to Figma, and AI features for
+              summarizing content and translating text. Focused on providing an
+              intuitive and interactive environment for users to organize,
+              share, and collaborate on files and workflows, combining real-time
+              collaboration with smart automation to enhance team productivity.
+              <br />
+            </p>
+          </div>
+
+          <div className="mt-15 mx-8  flex flex-wrap gap-2">
+            {/* {["ASP.NET", "Bootstrap", "JS", "HTML"].map((tech, key) => (
+              <span
+                key={key}
+                className="bg-blue-500/10 border text-blue-500 py-3 px-5 rounded-full text-l hover:bg-blue-500/40 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] hover:-translate-y-1 transition-transform duration-300"
+              >
+                {tech}
+              </span>
+            ))} */}
+            <Tooltip
+              techStack={
+                "This project was made using NextJs, Cloudflare, Liveblock"
+              }
+            />
+          </div>
+        </div>
+        <img
+          src="/assets/CollabFlow.png"
           alt=""
           className="lg:w-1/3 md:w-1/4 hidden md:block rounded-4xl w-full object-cover transition-all duration-600 ease-in-out blur-[4px] hover:blur-none hover:scale-105 hover:-rotate-[20deg]"
         />
