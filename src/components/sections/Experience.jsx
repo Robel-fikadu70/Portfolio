@@ -12,8 +12,8 @@ export const Experience = () => {
           <h1 className="text-3xl font-semibold mb-7">Experience</h1>
           <div className="flex flex-col md:flex-row justify-between ">
             <h1 className="text-2xl font-sans font-light my-4">
-              Power Platform Development -{" "}
-              <span className="font-bold">intern</span>{" "}
+              Power Platform Developer -
+              <span className="font-bold">Intern</span>
             </h1>
             <div className="flex flex-col gap-4">
               <p className="text-2xl font-sans font-light">
@@ -27,26 +27,39 @@ export const Experience = () => {
           <hr />
           <div className="flex flex-col md:flex-row justify-between ">
             <h1 className="text-2xl font-sans font-light my-4">
-              Back-End Development
+              Frontend Web Developer <span className="font-bold">Part-Time</span>
             </h1>
             <div className="flex flex-col gap-4">
               <p className="text-2xl font-sans font-light">Nova Computech</p>
               <p className="text-xl font-sans font-extralight">
-                Mar 2025 - Present (Part-time)
+                Mar 2025 - May 2025              </p>
+            </div>
+          </div>
+          <hr />
+          <div className="flex flex-col md:flex-row justify-between ">
+            <h1 className="text-2xl font-sans font-light my-4">
+              Full-Stack Web Developer - <span className="font-bold">Intern</span>
+            </h1>
+            <div className="flex flex-col gap-4">
+              <p className="text-2xl font-sans font-light">
+                TBC Technologies
+              </p>
+              <p className="text-xl font-sans font-extralight">
+                Jul 2025 - Oct2025
               </p>
             </div>
           </div>
           <hr />
           <div className="flex flex-col md:flex-row justify-between ">
             <h1 className="text-2xl font-sans font-light my-4">
-              Attending Computer Science Degree Program
+              Full-Stack Web Developer <span className="font-bold">Intern</span>
             </h1>
             <div className="flex flex-col gap-4">
               <p className="text-2xl font-sans font-light">
-                St.Mary University
+                Gebeya Inc.
               </p>
               <p className="text-xl font-sans font-extralight">
-                Mar 2025 - Present (Part-time)
+                Jul 2025 - Jan 2026
               </p>
             </div>
           </div>

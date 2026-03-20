@@ -61,7 +61,7 @@ export const Projects = () => {
           <Kwest />
         </motion.div>
         <motion.div
-          style={{ scale: scale3, zIndex: 5 }}
+          style={{ scale: scale3, zIndex: 6 }}
           className="sticky top-84"
         >
           <CollabFlow />
@@ -250,7 +250,6 @@ const BMS = () => {
       <div className="p-6 flex flex-col lg:flex-row items-start gap-10">
         <div className="lg:w-2/3 space-y-6">
           <h1 className="text-3xl font-bold mb-2">BMS</h1>
-          <div className="flex flex-col md:flex-row gap-4">
             <p className="text-gray-400 max-w-lg mb-4 leading-relaxed">
               Developed a Building Management System during my internship at TBC
               Technologies, focusing on creating a responsive and user-friendly
@@ -263,7 +262,6 @@ const BMS = () => {
               internship concluded.
               <br />
             </p>
-          </div>
 
           <div className="mt-15 mx-8  flex flex-wrap gap-2">
             {/* {["ASP.NET", "Bootstrap", "JS", "HTML"].map((tech, key) => (
