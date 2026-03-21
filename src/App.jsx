@@ -12,6 +12,7 @@ import Accreditations from "./components/sections/Accreditations";
 import InfiniteScroll from "./components/sections/Scroll";
 import { Experience } from "./components/sections/Experience";
 import HeroSection from "./components/sections/Footer";
+import { Toaster } from "react-hot-toast";
 // import { Testimonial } from "./components/sections/Testimonial";
 function App() {
   const [isloaded, setIsLoaded] = useState(false);
@@ -24,6 +25,7 @@ function App() {
     </div> */}
       {/* <LoaderGGG/> */}
       {!isloaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
+      <Toaster/>
 
       <div className="relative">
         {/* <BackgroundLayout> */}
