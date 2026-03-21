@@ -32,7 +32,7 @@ export const Home = () => {
             impactful solutions. With a background in computer science, I strive
             to blend creativity with functionality in every project I undertake.
             When I'm not coding, you might find me exploring the latest tech
-            trends or tinkering with gadgets!
+            trends or scrolling on IG (just kidding!)
           </p>
         </div>
 

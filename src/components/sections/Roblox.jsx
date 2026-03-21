@@ -49,7 +49,7 @@ const Roblox = () => {
               </p>
 
               <p className="text-gray-300 text-sm md:text-xl leading-relaxed transform group-hover:text-gray-200 transition-colors duration-300">
-                I’m a 3rd-year Computer Science student who enjoys building
+                I’m a Computer Science Graduate who enjoys building
                 software and learning how things work. I’m interested in web
                 development, mobile apps, and exploring areas like AI and
                 machine learning. I’ve worked on different personal and team

@@ -2,7 +2,7 @@ import React from "react";
 
 const Resume = () => {
   return (
-    <a href="/Resume-2.pdf" target="_blank" className="cursor-pointer flex justify-between bg-gray-800 px-3 py-2 rounded-full text-white tracking-wider shadow-xl hover:bg-gray-900 hover:scale-105 duration-500 hover:ring-1 font-mono w-[150px]">
+    <a href="https://drive.google.com/file/d/1gN1x5_n7Sj8jwedZiGWLdTaTzaD-XKES/view?usp=sharing" target="_blank" className="cursor-pointer flex justify-between bg-gray-800 px-3 py-2 rounded-full text-white tracking-wider shadow-xl hover:bg-gray-900 hover:scale-105 duration-500 hover:ring-1 font-mono w-[150px]">
       Resume
       <svg
         xmlns="http://www.w3.org/2000/svg"

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import toast from "react-hot-toast";
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -7,9 +8,10 @@ const Form = () => {
     message: "",
   });
 
-  const SERVICE_ID = "service_yfj2k1s";
-  const TEMPLATE_ID = "template_frvdxs8";
-  const PUBLIC_KEY = "hB7lbYfIH1VJk5O6e";
+  const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
+  const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
+  const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
+  console.log(SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -17,10 +19,46 @@ const Form = () => {
     emailjs
       .sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
       .then((result) => {
-        alert("Message Sent!");
+        toast.custom((t) => (
+          <div
+            className={`${
+              t.visible ? "animate-custom-enter" : "animate-custom-leave"
+            } max-w-md w-full bg-white shadow-lg rounded-xl pointer-events-auto flex ring-1 ring-black ring-opacity-5`}
+          >
+            <div className="flex-1 w-0 p-4">
+              <div className="flex items-start">
+                <div className="flex-shrink-0 pt-0.5">
+                  <img
+                    className="h-10 w-10 rounded-full object-cover"
+                    src="https://res.cloudinary.com/dtqoejfpt/image/upload/v1774105324/20251117_220913_wbnqf6.jpg"
+                    alt=""
+                  />
+                </div>
+                <div className="ml-3 flex-1">
+                  <p className="text-sm font-medium text-gray-900">
+                    Young Simba
+                  </p>
+                  <p className="mt-1 text-sm text-gray-500">
+                    Thank You! I'll respond at my earliest convenience.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex border-l border-gray-200">
+              <button
+                onClick={() => toast.dismiss(t.id)}
+                className="w-full border border-transparent rounded-none rounded-r-lg p-4 flex items-center justify-center text-sm font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        ));
         setFormData({ email: "", message: "" });
       })
-      .catch(() => alert("Ooops! Something went wrong. Please try again."));
+      .catch(() =>
+        toast.error("Ooops! Something went wrong. Please try again later.")
+      );
   };
 
   return (
@@ -69,7 +107,6 @@ const Form = () => {
                 onChange={(e) =>
                   setFormData({ ...formData, message: e.target.value })
                 }
-                defaultValue={"          "}
                 className="w-full px-4 py-3 h-24 resize-none rounded-lg bg-transparent border border-[#414141] text-white placeholder-opacity-50 focus:outline-none focus:border-[#e81cff]"
               />
             </div>

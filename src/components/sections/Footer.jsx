@@ -130,7 +130,7 @@ const HeroSection = () => {
           <StyledButton name={"LinkedIn"} href={"https://www.linkedin.com/in/robel-fikadu-612a14300/"} />
           <StyledButton name={"Email"} href={"mailto:robelfikadu70@gmail.com"} />
           <StyledButton name={"Telegram"} href={"https://t.me/Robelfikadu"}/>
-          <StyledButton name={"Resume"} href={"/Resume-2.pdf"}/>
+          <StyledButton name={"Resume"} href={"https://drive.google.com/file/d/1gN1x5_n7Sj8jwedZiGWLdTaTzaD-XKES/view?usp=sharing"}/>
         </div>
       </div>
     </section>
