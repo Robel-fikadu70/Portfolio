@@ -3,6 +3,8 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Tooltip from "../Tooltip";
 import Ccard from "../HoverAdditional";
 import { RevealOnScroll } from "../RevealOnScroll";
+import Badge from "../Badge";
+
 
 export const Projects = () => {
   const containerRef = useRef(null);
@@ -10,6 +12,7 @@ export const Projects = () => {
     target: containerRef,
     offset: ["start start", "end end"],
   });
+
 
   // Shrinking scale transforms for cards
   const scale1 = useTransform(scrollYProgress, [0, 0.2], [1, 0.92]);
@@ -76,7 +79,7 @@ const Bookhive = () => {
     <div className="flex flex-col gap-y-5 border border-[#e81cff lg:mx-24 mb-10 bg-[#111] rounded-4xl shadow-xl">
       <div className="p-6 flex flex-col lg:flex-row items-start gap-10">
         <div className="lg:w-2/3 space-y-6">
-          <h1 className="text-3xl font-bold mb-2">BookHive</h1>
+          <h1 className="text-3xl font-bold mb-2">BookHive <Badge type="team"/></h1>
           <p className="text-gray-400 max-w-lg  mb-4 leading-relaxed">
             A complete Library Management System built with ASP.NET Web Forms
             (C#)[There is PHP version also], designed to manage books, users,
@@ -115,7 +118,7 @@ const CurrencyPrediction = () => {
     <div className="flex flex-col gap-y-5 border border-gray-400 lg:mx-24 mb-10 bg-[#111] rounded-4xl shadow-xl">
       <div className="p-6 flex flex-col lg:flex-row items-start gap-10">
         <div className="lg:w-2/3 space-y-6">
-          <h1 className="text-3xl font-bold mb-2">Bitcoin Price Forcasting</h1>
+          <h1 className="text-3xl font-bold mb-2">Bitcoin Price Forcasting <Badge type="personal"/></h1>
           <p className="text-gray-400 max-w-lg mb-4 leading-relaxed">
             Forecasting Bitcoin prices using historical data and an LSTM neural
             network. This project demonstrates how deep learning models can be
@@ -249,7 +252,7 @@ const BMS = () => {
     <div className="flex flex-col gap-y-5 border border-gray-400 lg:mx-24  mb-10 bg-[#111] rounded-4xl shadow-xl">
       <div className="p-6 flex flex-col lg:flex-row items-start gap-10">
         <div className="lg:w-2/3 space-y-6">
-          <h1 className="text-3xl font-bold mb-2">BMS</h1>
+          <h1 className="text-3xl font-bold mb-2">BMS <Badge type="internship"/> </h1>
             <p className="text-gray-400 max-w-lg mb-4 leading-relaxed">
               Developed a Building Management System during my internship at TBC
               Technologies, focusing on creating a responsive and user-friendly
@@ -291,7 +294,7 @@ const Kwest = () => {
     <div className="flex flex-col gap-y-5 border border-gray-400 lg:mx-24  mb-10 bg-[#111] rounded-4xl shadow-xl">
       <div className="p-6 flex flex-col lg:flex-row items-start gap-10">
         <div className="lg:w-2/3 space-y-6">
-          <h1 className="text-3xl font-bold mb-2">Kwest</h1>
+          <h1 className="text-3xl font-bold mb-2">Kwest <Badge type="internship"/> </h1>
           <div className="flex flex-col md:flex-row gap-4">
             <p className="text-gray-400 max-w-lg mb-4 leading-relaxed">
               Developed a Leave Management Web Application during my internship
@@ -334,7 +337,7 @@ const RugNova = () => {
     <div className="flex flex-col gap-y-5 border border-gray-400 lg:mx-24  mb-10 bg-[#111] rounded-4xl shadow-xl">
       <div className="p-6 flex flex-col lg:flex-row items-start gap-10">
         <div className="lg:w-2/3 space-y-6">
-          <h1 className="text-3xl font-bold mb-2">Rug Nova</h1>
+          <h1 className="text-3xl font-bold mb-2">Rug Nova <Badge type="personal"/></h1>
           <div className="flex flex-col md:flex-row gap-4">
             <p className="text-gray-400 max-w-lg mb-4 leading-relaxed">
               Developed a full-stack E-commerce web application for a
@@ -380,7 +383,7 @@ const CollabFlow = () => {
     <div className="flex flex-col gap-y-5 border border-gray-400 lg:mx-24  mb-10 bg-[#111] rounded-4xl shadow-xl">
       <div className="p-6 flex flex-col lg:flex-row items-start gap-10">
         <div className="lg:w-2/3 space-y-6">
-          <h1 className="text-3xl font-bold mb-2">Collab Flow</h1>
+          <h1 className="text-3xl font-bold mb-2">Collab Flow <Badge type="team"/></h1>
           <div className="flex flex-col md:flex-row gap-4">
             <p className="text-gray-400 max-w-lg mb-4 leading-relaxed">
               Developed Collab Flow, a collaboration
@@ -421,3 +424,5 @@ const CollabFlow = () => {
     </div>
   );
 };
+
+

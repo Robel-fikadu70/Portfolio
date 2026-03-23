@@ -1,21 +1,22 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import toast from "react-hot-toast";
+import { dialog } from "framer-motion/client";
 
 const Form = () => {
   const [formData, setFormData] = useState({
     email: "",
     message: "",
   });
+  const [loading, setLoading] = useState(false);
 
   const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
   const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
   const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
-  
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    setLoading(true);
     emailjs
       .sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
       .then((result) => {
@@ -39,14 +40,17 @@ const Form = () => {
                     Young Simba
                   </p>
                   <p className="mt-1 text-sm text-gray-500">
-                    Thank You! I'll respond at my earliest convenience.
+                    Thank You! I'll respond Soon.
                   </p>
                 </div>
               </div>
             </div>
             <div className="flex border-l border-gray-200">
               <button
-                onClick={() => toast.dismiss(t.id)}
+                onClick={() => {
+                  toast.dismiss(t.id);
+                  setLoading(false);
+                }}
                 className="w-full border border-transparent rounded-none rounded-r-lg p-4 flex items-center justify-center text-sm font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"
               >
                 Close
@@ -56,9 +60,10 @@ const Form = () => {
         ));
         setFormData({ email: "", message: "" });
       })
-      .catch(() =>
-        toast.error("Ooops! Something went wrong. Please try again later.")
-      );
+      .catch(() => {
+        toast.error("Ooops! Something went wrong. Please try again later.");
+        setLoading(false);
+      });
   };
 
   return (
@@ -113,9 +118,9 @@ const Form = () => {
 
             <button
               type="submit"
-              className="w-2/5 mt-2 px-4 py-3 text-sm font-semibold text-gray-400 bg-[#313131] border border-[#414141] rounded-md hover:bg-white hover:text-black hover:border-white active:scale-95 transition"
+              className={`w-2/5 mt-2 px-4 py-3 text-sm font-semibold rounded-md transition ${loading ? "bg-gray-600 cursor-not-allowed" : "bg-[#313131] hover:bg-white hover:text-black"}`}
             >
-              Submit
+              {loading ? "Sending..." : "Submit"}
             </button>
           </form>
         </div>
